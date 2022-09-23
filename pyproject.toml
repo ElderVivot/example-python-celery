@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "celery-python"
+version = "0.1.0"
+description = ""
+authors = ["ElderVivot <eldervivot@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flower = "^1.2.0"
+httpx = "^0.23.0"
+celery = {extras = ["redis"], version = "^5.2.7"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^5.0.4"
+mypy = "^0.971"
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
